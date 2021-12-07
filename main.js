@@ -1,6 +1,6 @@
 const log = (...args) => {
   if (log.enabled) {
-    console.log("[path-parameter-tag]", ...args);
+    console.log("[pathParam]", ...args);
   }
 };
 log.enabled = false;
