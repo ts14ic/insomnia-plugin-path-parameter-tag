@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-path-parameter-tag",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "insomnia": {
     "name": "path-parameter-tag",
     "displayName": "Path parameter tag",
