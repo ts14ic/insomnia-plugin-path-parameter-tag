@@ -1,6 +1,16 @@
 {
   "name": "insomnia-plugin-path-parameter-tag",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "author": {
+    "name": "Artiom Iazinschi",
+    "email": "iw2snl@gmail.com"
+  },
+  "keywords": ["insomnia", "insomnia plugin", "path parameter"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ts14ic/insomnia-plugin-path-parameter-tag.git"
+  },
   "insomnia": {
     "name": "path-parameter-tag",
     "displayName": "Path parameter tag",
