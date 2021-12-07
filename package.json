@@ -1,0 +1,13 @@
+{
+  "name": "insomnia-plugin-path-parameter-tag",
+  "version": "0.9.0",
+  "insomnia": {
+    "name": "path-parameter-tag",
+    "displayName": "Path parameter tag",
+    "description": "Plugin to include editable path parameters in the URI",
+    "publisher": {
+      "name": "ts14ic"
+    }
+  },
+  "main": "main.js"
+}
