@@ -1,6 +1,6 @@
 # Path parameter tag Insomnia plugin
 
-A template tag, that can be used inside URIs to as path parameters.  
+A template tag, that can be used inside URIs as path parameters.  
 
 ![uri preview with display name](./screenshots/uri-preview-with-display-name.png)
 
@@ -25,5 +25,5 @@ Here's the URI and CURL previews with the request above, and a value set:
 
 "Description" is not sent anywhere, and is there only for documentation purpose.  
 
-"Display name" is also not sent anywhere, but you can use it to configure the look of the tag Insomnia.  
+"Display name" is also not sent anywhere, but you can use it to configure the look of the tag in Insomnia UI.  
 ![uri preview with display name](./screenshots/uri-preview-with-display-name.png)
