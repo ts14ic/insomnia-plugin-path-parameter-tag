@@ -1,4 +1,4 @@
-# Path parameter tag Insomnia plugin
+# Insomnia plugin - Path parameter tag
 
 A template tag, that can be used inside URIs as path parameters.  
 
@@ -27,3 +27,15 @@ Here's the URI and CURL previews with the request above, and a value set:
 
 "Display name" is also not sent anywhere, but you can use it to configure the look of the tag in Insomnia UI.  
 ![uri preview with display name](./screenshots/uri-preview-with-display-name.png)
+
+## Migration from `:param` style parameters
+
+No automated way, but there's a workaround to quickly replace all of `:param` style parameters to use this tag instead - throughout all workspaces:
+1. Close Insomnia.
+2. Open `{insomnia-config-directory}/insomnia.Request.db` (see [Insomnia docs][docs-config-location] on where the directory is).
+3. Do a regex replace: from `(?<=/)(:\w+)` to `{% pathParam '$1', '', '', true %}` (this replaces anything that looks like `/:param` to become `/{% pathParam ':param', '', '', true %}`.
+4. Save the file, open Insomnia.
+
+Limiting this transformation to only one project would probably involve exporting the project, and doing the same on the export data only, then reimporting.
+
+[docs-config-location]: https://docs.insomnia.rest/insomnia/application-data
